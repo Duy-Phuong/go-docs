@@ -287,7 +287,7 @@ Also, You can declare multiple variables with the syntax
 
 The program below has some examples of variable declarations
 
-```
+```go
 package main
 import "fmt"
 
@@ -331,7 +331,7 @@ Note that You used **:=** instead of **=**. You cannot use := just to assign a v
 
 Create a file called assign.go with the following code
 
-```
+```go
 package main
 import ("fmt")
 
@@ -359,7 +359,7 @@ Constant variables are those variables whose value cannot be changed once assign
 
 Create a file called constant.go and with the following code
 
-```
+```go
 package main
 import ("fmt")
 
@@ -397,7 +397,7 @@ The iteration_expression id is executed, and the evaluation_expression is evalua
 
 Copy the below program into a file and execute it to see the for loop printing numbers from 1 to 5
 
-```
+```go
 package main
 import "fmt"
 
@@ -423,7 +423,7 @@ Output is
 
 If else is a conditional statement. The synax is
 
-```
+```go
 if condition{
 // statements_1
 }else{
@@ -437,7 +437,7 @@ You can use if statement without else also. You also can have chained if else st
 
 Execute the below program. It checks if a number, x, is less than 10. If so, it will print "x is less than 10"
 
-```
+```go
 package main
 import "fmt"
 
@@ -454,7 +454,7 @@ Here since the value of x is greater than 10, the statement inside if block cond
 
 Now see the below program. We have an else block which will get executed on the failure of if evaluation.
 
-```
+```go
 package main
 import "fmt"
 
@@ -478,7 +478,7 @@ x is greater than or equals 10
 
 Now we will see a program with multiple if else blocks(chained if else).Execute the below example. It checks whether a number is less than 10 or is between 10-90 or greater than 90.
 
-```
+```go
 package main
 import "fmt"
 
@@ -507,7 +507,7 @@ x is greater than 90
 
 Switch is another conditional statement. Switch statements evaluate an expression and the result is compared against a set of available values(cases). Once a match is found the statements associated with that match(case) is executed. If no match is found nothing will be executed. You can also add a default case to switch which will be executed if no other matches are found. The syntax of the switch is
 
-```
+```go
 switch expression {
     case value_1:
         statements_1
@@ -524,7 +524,7 @@ Here the value of the expression is compared against the values in each case. On
 
 Execute the below program
 
-```
+```go
 package main
 import "fmt"
 
@@ -595,7 +595,7 @@ len(arrayname)
 
 Execute the below example to understand the array
 
-```
+```go
 package main
 import "fmt"
 
@@ -643,7 +643,7 @@ This will create a slice named slice_name from an array named array_name with th
 
 Execute the below program. The program will create a slice from the array and print it. Also, you can see that modifying the contents in the slice will modify the actual array.
 
-```
+```go
 package main
 import "fmt"
 
@@ -680,7 +680,7 @@ There are certain functions which you can apply on slices
 
 Execute the following program.
 
-```
+```go
 package main
 import "fmt"
 
@@ -720,7 +720,7 @@ The program first creates 2 slices and printed its length. Then it appended one 
 
 A function represents a block of statements which performs a specific task. A function declaration tells us function name, return type and input parameters. Function definition represents the code contained in the function. The syntax for declaring the function is
 
-```
+```go
 func function_name(parameter_1 type, parameter_n type) return_type {
 //statements
 }
@@ -730,7 +730,7 @@ The parameters and return types are optional. Also, you can return multiple valu
 
 Let's run the following example. Here function named calc will accept 2 numbers and performs the addition and subtraction and returns both values.
 
-```
+```go
 package main
 import "fmt"
 
@@ -771,7 +771,7 @@ We will see and discuss how to create and use packages in the following example.
 
 **Step 1)** Create a file called package_example.go and add the below code
 
-```
+```go
 package main
 import "fmt"
 //the package to be created
@@ -805,7 +805,7 @@ Here the path is C:\Go\
 
 **Step 4)** Create a file called calc.go (You can give any name, but the package name in the code matters. Here it should be calculation) inside calculation directory and add the below code
 
-```
+```go
 package calculation
   
 func Do_add(num1 int, num2 int)(int) {
@@ -830,7 +830,7 @@ Defer statements are used to defer the execution of a function call until the fu
 
 Lets learn this with an example:
 
-```
+```go
 package main
 import "fmt"
 
@@ -857,7 +857,7 @@ Stacking defer is using multiple defer statements. Suppose you have multiple def
 
 Execute the below code
 
-```
+```go
 package main
 import "fmt"
 
@@ -889,7 +889,7 @@ Before explaining pointers let's will first discuss '&' operator. The '&' operat
 
 Execute the below program to display the value of a variable and the address of that variable
 
-```
+```go
 package main
 import "fmt"
 
@@ -915,7 +915,7 @@ A pointer variable stores the memory address of another variable. You can define
 
 The asterisk(*) represents the variable is a pointer. You will understand more by executing the below program
 
-```
+```go
 package main
 import "fmt"
 
@@ -977,7 +977,7 @@ The first approach is not efficient. In these kinds of scenarios, structures are
 
 The syntax for declaring a structure is
 
-```
+```go
 type structname struct {
    variable_1 variable_1_type
    variable_2 variable_2_type
@@ -1025,7 +1025,7 @@ Here, you need to maintain the order of elements. Raj will be mapped to name, ne
 
 Execute the code below
 
-```
+```go
 package main
 import "fmt"
 
@@ -1076,7 +1076,7 @@ func (variable variabletype) methodName(parameter1 paramether1type) {
 
 Let's convert the above example program to use methods instead of function.
 
-```
+```go
 package main
 import "fmt"
 
@@ -1136,7 +1136,7 @@ go add(x,y)
 
 You will understand goroutines with the below examples. Execute the below program
 
-```
+```go
 package main
 import "fmt"
     
@@ -1176,7 +1176,7 @@ In the above code, the main() doesn't wait for the display() to complete, and th
 
 Now we modify the program to print the statements from display() as well. We add a time delay of 2 sec in the for loop of main() and a 1 sec delay in the for loop of the display().
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1261,7 +1261,7 @@ You will see this in below example. First, write a normal goroutine and see the 
 
 Execute the below program
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1287,7 +1287,7 @@ The main() finished the execution and did exit before the goroutine executes. So
 
 Now modify the above program to use channels and see the behaviour.
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1333,7 +1333,7 @@ If the status is True it means you received data from the channel. If false, it 
 
 You can also use channels for communication between goroutines. Need to use 2 goroutines – one pushes data to the channel and other receives the data from the channel. See the below program
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1412,7 +1412,7 @@ Select can be viewed as a switch statement which works on channels. Here the cas
 
 Let's see the below code
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1460,7 +1460,7 @@ Here the select statement waits for data to be available in any of the channels.
 
 Add a default case to the select in the same program and see the output. Here, on reaching select block, if no case is having data ready on the channel, it will execute the default block without waiting for data to be available on any channel.
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1516,7 +1516,7 @@ Let's learn mutex with an example which is counting the number of times a loop i
 
 First, You run the program without mutex
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1574,7 +1574,7 @@ Suppose soon after performing step 3 by goroutine1; another goroutine might have
 
 Now You will run the program with mutex. Here the above mentioned 3 steps are executed in a mutex.
 
-```
+```go
 package main
 import "fmt"
 import "time"
@@ -1635,7 +1635,7 @@ Errors are abnormal conditions like closing a file which is not opened, open a f
 
 The below example explains more about the error.
 
-```
+```go
 package main
 import "fmt"
 import "os"
@@ -1672,7 +1672,7 @@ Using this feature, you can create custom errors. This is done by using New() of
 
 Run the below program
 
-```
+```go
 package main
 import "fmt"
 import "os"
@@ -1724,7 +1724,7 @@ Line three
 
 Now run the below program to see it prints the contents of the entire file as output
 
-```
+```go
 package main
 import "fmt"
 import "io/ioutil"
@@ -1745,7 +1745,7 @@ Here the data, err := ioutil.ReadFile("data.txt") reads the data and returns a b
 
 You will see this with a program
 
-```
+```go
 package main
 import "fmt"
 import "os"
