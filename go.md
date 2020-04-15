@@ -142,6 +142,14 @@ https://www.guru99.com/google-go-tutorial.html
 
 https://www.tutorialspoint.com/go/go_pointers.htm
 
+https://techmaster.vn/posts/35044/series-golang-co-ban-phan-17-methods-phuong-thuc
+
+https://viblo.asia/p/go-lang-lap-trinh-golang-can-ban-methods-va-interface-3P0lPY4g5ox
+
+https://zalopay-oss.github.io/go-advanced/ch1-basic/ch1-04-func-method-interface.html
+
+https://kipalog.com/users/DangQuangHuy/mypage
+
 Hai biến môi trường kiểm soát vận mệnh của bạn trong vùng đất của Go. `GOROOT` là nơi đặt các cài đặt của Go:
 
 Để xem tất cả biến môi trường của Go, gõ: `go env`.
@@ -157,6 +165,8 @@ Thêm \bin vào
 ![image-20200415214012467](./go.assets/image-20200415214012467.png)  
 
 Create folder src, bin, pkg
+
+![image-20200415221520517](./go.assets/image-20200415221520517.png)
 
 ## How to Download and install GO
 
